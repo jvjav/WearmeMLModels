@@ -56,6 +56,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        run: |
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "your-github-username"
+          git checkout --orphan gh-pages
+          git --work-tree=./site add --all
+          git --work-tree=./site commit -m "Deploy MkDocs site"
+          git push origin gh-pages --force
