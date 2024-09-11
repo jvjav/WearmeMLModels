@@ -86,7 +86,7 @@ To overcome the initial value issue:
 
 ### Training Dataset
 
-Obtained from [Equivalent circuit model recognition of electrochemical impedance spectroscopy via machine learning](https://github.com/Shan-Zhu/ML-EIS/blob/master/EIS-Data-Raw.csv) and [Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning]()
+Collected by Zhu et al. from [Equivalent circuit model recognition of electrochemical impedance spectroscopy via machine learning](https://github.com/Shan-Zhu/ML-EIS/blob/master/EIS-Data-Raw.csv) and by Lai et al. from a "group of local high-throughput electrochemical experiments" [Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning]()
 
 
 [^1]: https://www.sciencedirect.com/science/article/pii/S0013468622005126?via%3Dihubß
@@ -95,3 +95,12 @@ Obtained from [Equivalent circuit model recognition of electrochemical impedance
 
 - Accuracy
 - Kappa  (defined in [A coefficient of agreement for nominal scales](https://journals.sagepub.com/doi/10.1177/001316446002000104))
+
+## Workflow
+### Part 1
+
+Choose the best interpretable ML model for each ECM.
+
+### Part 2
+
+Choose 5 best Global Optimization Algorithms for each ECM.
